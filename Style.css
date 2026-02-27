@@ -99,18 +99,37 @@ header {
     margin-right: auto;
 }
 
-.skills-grid span {
+.skill-item {
     background: white;
     color: #0a1d37;
-    padding: 12px;
-    border-radius: 5px;
+    padding: 16px 10px 12px 10px;
+    border-radius: 10px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(10, 29, 55, 0.07);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skills-grid span:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.skill-item i {
+    display: none;
+}
+
+.skill-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(10, 29, 55, 0.10));
+}
+
+.skill-item:hover {
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(10, 29, 55, 0.18);
 }
 
 
