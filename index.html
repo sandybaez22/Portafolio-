@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sandy Báez | Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="Sandy.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Sandy Báez</h1>
+
+        <div class="language-selector">
+            <button class="lang-btn">🌐 Español ▾</button>
+            <ul class="lang-menu">
+                <li data-lang="es">Español</li>
+                <li data-lang="en">English</li>
+                <li data-lang="fr">Français</li>
+                <li data-lang="pt">Português</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2 data-i18n="hero_title">Desarrollador Web & Apps</h2>
+            <p data-i18n="hero_desc">
+                Creo soluciones digitales modernas para emprendedores y negocios
+            </p>
+        </div>
+
+        <div class="hero-img">
+            <img src="Sandy.jpeg" alt="Foto de Sandy Báez">
+            <a href="Curriculum.pdf" class="btn" data-i18n="see_cv" target="_blank" style="display:block;margin-top:15px;text-align:center;">Ver currículum</a>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="section">
+        <h2 data-i18n="about_title">Sobre mí</h2>
+        <p data-i18n="about_text">
+            Soy desarrollador apasionado por la tecnología y la programación. Me especializo en la creación de páginas web y aplicaciones modernas utilizando HTML, CSS y JavaScript, enfocándome en el diseño, la funcionalidad y la experiencia del usuario. También
+            trabajo con Python, C# y Flutter para desarrollar aplicaciones y proyectos interactivos.
+        </p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section dark">
+        <h2 data-i18n="skills_title">Lenguajes & Tecnologías</h2>
+        <div class="skills-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>C#</span>
+            <span>Flutter</span>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section">
+        <h2 data-i18n="projects_title">Proyectos</h2>
+
+        <a href="https://nexusstrike.neocities.org/" class="project-card link-card" target="_blank">
+            <img src="Nexusstrike.jpeg" alt="NexusStrike">
+            <h3>NexusStrike</h3>
+            <p data-i18n="project1_desc">
+                Videojuego desarrollado en Unity con sistema de tienda, inventario y modos de juego.
+            </p>
+            <small>Tecnologías: Unity, C#</small>
+        </a>
+
+        <a href="https://galaxycodeinvasion.neocities.org/" class="project-card link-card" target="_blank">
+            <img src="Galaxycodeinvasion.jpeg" alt="GalaxyCodeInvasion">
+            <h3>GalaxyCodeInvasion</h3>
+            <p data-i18n="project2_desc">
+                Proyecto interactivo enfocado en programación, lógica y experiencia visual moderna.
+            </p>
+            <small>Tecnologías: HTML, CSS, JavaScript</small>
+        </a>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section class="section">
+        <h2 data-i18n="cert_title">Certificados</h2>
+
+        <div class="certificates">
+
+            <div class="certificate-card">
+                <img src="Certificadoliceo.jpeg">
+                <h3 data-i18n="cert1_title">
+                    Diplomado en Técnico en Soporte de Redes y Sistemas Informáticos
+                </h3>
+                <a href="certificadoliceo.pdf" class="btn" data-i18n="view_digital">
+                    Ver de forma digital
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <img src="Certificadotalentodigital.jpeg">
+                <h3 data-i18n="cert2_title">Diplomado en Ciberseguridad</h3>
+                <a href="Certificadotalentodigital.pdf" class="btn" data-i18n="view_digital">
+                    Ver de forma digital
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="social-section">
+        <h2 data-i18n="social_title">Redes Sociales</h2>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/Sandybaez_15"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/18AfzHeznE/"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/8297046584"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/sandybaez22"><i class="fab fa-github"></i></a>
+            <a href="mailto:sandybaeztolentin@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">
+            © 2026 Sandy Báez - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
