@@ -1,3 +1,61 @@
+// Proyectos para mostrar
+const proyectos = [{
+        img: 'Nexusstrike.jpeg',
+        alt: 'NexusStrike',
+        titulo: 'NexusStrike',
+        desc: 'Videojuego desarrollado en Unity con sistema de tienda, inventario y modos de juego.<br> Tecnologías: Unity, C#',
+        link: 'https://nexusstrike.neocities.org/'
+    },
+    {
+        img: 'Galaxycodeinvasion.jpeg',
+        alt: 'GalaxyCodeInvasion',
+        titulo: 'GalaxyCodeInvasion',
+        desc: 'Videojuego de naves espaciales desarrollado en python utilizando la biblioteca Pygame, con niveles, enemigos y power-ups.<br> Tecnologías: Python',
+        link: 'https://galaxycodeinvasion.neocities.org/'
+    }
+
+    //  agregar más proyectos aquí
+    , {
+        img: 'MonacoSportCafe.jpeg',
+        alt: 'Monaco Sport Cafe',
+        titulo: 'Monaco Sport Cafe',
+        desc: 'Web con diseño responsive para un restaurante de deportes.<br> Tecnologías: HTML, CSS, JavaScript',
+        link: 'https://sandybaez22.github.io/Monaco-Sport-Cafe/'
+    }
+];
+
+let inicio = 0;
+const porPagina = 2;
+
+function mostrarProyectos() {
+    const contenedor = document.getElementById('proyectos-container');
+    contenedor.innerHTML = '';
+    for (let i = inicio; i < Math.min(inicio + porPagina, proyectos.length); i++) {
+        const p = proyectos[i];
+        const card = document.createElement('div');
+        card.className = 'proyecto-card';
+        card.innerHTML = `<a href="${p.link}" target="_blank"><img src="${p.img}" alt="${p.alt}"></a><h3>${p.titulo}</h3><p>${p.desc}</p>`;
+        contenedor.appendChild(card);
+    }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+    btnPrev.addEventListener('click', () => {
+        if (inicio - porPagina >= 0) {
+            inicio -= porPagina;
+            mostrarProyectos();
+        }
+    });
+    btnNext.addEventListener('click', () => {
+        if (inicio + porPagina < proyectos.length) {
+            inicio += porPagina;
+            mostrarProyectos();
+        }
+    });
+    mostrarProyectos();
+});
 console.log("Portafolio cargado correctamente");
 
 const langBtn = document.querySelector(".lang-btn");

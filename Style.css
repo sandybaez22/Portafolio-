@@ -1,3 +1,68 @@
+/* Proyectos en fila y navegación */
+
+.proyectos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 20px;
+}
+
+.proyecto-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyecto-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.proyectos-nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.proyectos-nav button {
+    background: #0a1d37;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(10, 29, 55, 0.10);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.proyectos-nav button:hover {
+    background: #123b6d;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(10, 29, 55, 0.18);
+}
+
+.proyectos-nav button:active {
+    background: #0a1d37;
+    transform: scale(0.98);
+}
+
+
 /* RESET GENERAL */
 
 * {

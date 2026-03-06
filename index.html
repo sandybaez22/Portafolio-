@@ -14,7 +14,7 @@
 
     <!-- HEADER -->
     <header>
-        <h1>Sandy Báez</h1>
+        <!-- Nombre movido debajo de la foto -->
 
         <div class="language-selector">
             <button class="lang-btn">🌐 Español ▾</button>
@@ -38,6 +38,7 @@
 
         <div class="hero-img">
             <img src="Sandy.jpeg" alt="Foto de Sandy Báez">
+            <h1 style="margin-top:18px; font-size:2.2rem; color:#0a1d37; font-weight:700; text-align:center;">Sandy Báez</h1>
             <a href="Curriculum.pdf" class="btn" data-i18n="see_cv" target="_blank" style="display:block;margin-top:15px;text-align:center;">Ver currículum</a>
         </div>
     </section>
@@ -67,24 +68,11 @@
     <!-- PROYECTOS -->
     <section class="section">
         <h2 data-i18n="projects_title">Proyectos</h2>
-
-        <a href="https://nexusstrike.neocities.org/" class="project-card link-card" target="_blank">
-            <img src="Nexusstrike.jpeg" alt="NexusStrike">
-            <h3>NexusStrike</h3>
-            <p data-i18n="project1_desc">
-                Videojuego desarrollado en Unity con sistema de tienda, inventario y modos de juego.
-            </p>
-            <small>Tecnologías: Unity, C#</small>
-        </a>
-
-        <a href="https://galaxycodeinvasion.neocities.org/" class="project-card link-card" target="_blank">
-            <img src="Galaxycodeinvasion.jpeg" alt="GalaxyCodeInvasion">
-            <h3>GalaxyCodeInvasion</h3>
-            <p data-i18n="project2_desc">
-                Proyecto interactivo enfocado en programación, lógica y experiencia visual moderna.
-            </p>
-            <small>Tecnologías: HTML, CSS, JavaScript</small>
-        </a>
+        <div id="proyectos-container" class="proyectos-row"></div>
+        <div class="proyectos-nav">
+            <button id="btn-prev">Anterior</button>
+            <button id="btn-next">Siguiente</button>
+        </div>
     </section>
 
     <!-- CERTIFICADOS -->
