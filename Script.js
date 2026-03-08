@@ -15,6 +15,7 @@ const proyectos = [{
     }
 
     //  agregar más proyectos aquí
+
     , {
         img: 'MonacoSportCafe.jpeg',
         alt: 'Monaco Sport Cafe',
@@ -22,6 +23,15 @@ const proyectos = [{
         desc: 'Web con diseño responsive para un restaurante de deportes.<br> Tecnologías: HTML, CSS, JavaScript',
         link: 'https://sandybaez22.github.io/Monaco-Sport-Cafe/'
     }
+
+    , {
+        img: 'Login.jpeg',
+        alt: 'Login',
+        titulo: 'Login',
+        desc: 'Proyecto Login, backend enfocado en la autenticación y gestión de usuarios, mas un videojuego de Tres en Raya desarrolado con html, css y javascript.<br> Tecnologías: HTML, CSS, JavaScript',
+        link: 'https://sandybaez22.github.io/Login-/'
+    }
+
 ];
 
 let inicio = 0;
