@@ -30,6 +30,12 @@ const proyectos = [{
         titulo: 'Login',
         desc: 'Proyecto Login, backend enfocado en la autenticación y gestión de usuarios, mas un videojuego de Tres en Raya desarrolado con html, css y javascript.<br> Tecnologías: HTML, CSS, JavaScript',
         link: 'https://sandybaez22.github.io/Login-/'
+    }, {
+        img: 'NexusTemplates.png',
+        alt: 'NexusTemplates',
+        titulo: 'NexusTemplates',
+        desc: 'TIenda online de plantillas webs, tambien hechas en canva totalmente editables y Platillas para apps hechas en flutter.',
+        link: 'https://nexustemplates.neocities.org/'
     }
 
 ];
