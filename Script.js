@@ -1,10 +1,10 @@
 // Proyectos para mostrar
 const proyectos = [{
-        img: 'Nexusstrike.jpeg',
-        alt: 'NexusStrike',
-        titulo: 'NexusStrike',
-        desc: 'Videojuego desarrollado en Unity con sistema de tienda, inventario y modos de juego.<br> Tecnologías: Unity, C#',
-        link: 'https://nexusstrike.neocities.org/'
+        img: 'MiSaas.png',
+        alt: 'MiSaas',
+        titulo: 'MiSaas',
+        desc: 'Angente de IA desarrollado en python utilizando una API Key del modelo Groq, con funcionalidades de chat. <br> Tecnologías: Python',
+        link: 'https://dashboard.render.com/web/srv-d6sv9a5m5p6s73b2vj0g'
     },
     {
         img: 'Galaxycodeinvasion.jpeg',
